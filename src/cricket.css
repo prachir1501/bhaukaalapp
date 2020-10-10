@@ -1,0 +1,13 @@
+h1 {
+    /* text-align: center; */
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.body{
+    margin: 20px 20px 20px 20px;
+}
