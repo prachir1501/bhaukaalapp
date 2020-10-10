@@ -8,17 +8,16 @@ import Movie from './movie'
 import Footer from './footer'
 import Header from './header'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Prachir Branch</h1>
-      <Cricket/>
-      <News/>
-      <Food/>
-      <Movie/>
-      <Footer/>
-      <Header/>
+
+    <Cricket/>
+
+          
     </div>
   );
 }
