@@ -53,11 +53,11 @@ function App() {
       <div className="App">
        
         
-    <h1>{console.log(output)}Manas Branch {output.data.country} </h1>
+    {/* <h1>{console.log(output)}Manas Branch {output.data.country} </h1> */}
         {/* <Cricket/> */}
-        <News location={output.data.country}/>
-        {/* <Food/>
-        <Movie/>
+        {/* <News location={output.data.country}/> */}
+        <Food  location = {output.data}/>
+        {/* <Movie/>
         <Footer/>
         <Header/> */}
       </div>
