@@ -7,6 +7,15 @@ import Food from './food'
 import Movie from './movie'
 import Footer from './footer'
 import Header from './header'
+import IP from "./ip"
+const axios = require("axios");
+
+
+var res1;
+axios.get("https://api.ipify.org").then(res => {  
+res1 = res.data ;
+IP(res1);
+});
 
 
 function App() {
