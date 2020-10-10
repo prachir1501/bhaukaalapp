@@ -15,7 +15,11 @@ function App() {
   return (
     <div className="App">
 
+    <Header/>
+
     <Cricket/>
+
+    <Footer/>
 
           
     </div>
