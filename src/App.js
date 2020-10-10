@@ -12,7 +12,7 @@ import Header from './header'
 function App() {
   return (
     <div className="App">
-      <h1>Master Branch</h1>
+      <h1>Prachir Branch</h1>
       <Cricket/>
       <News/>
       <Food/>
