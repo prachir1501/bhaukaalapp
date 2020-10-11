@@ -21,7 +21,7 @@ function Home()
        
         <div>
        
-        <h1>Hi there!</h1>
+        <h1>Hi There!</h1>
         <YouTube
 
          videoId={"xMKzdQrC5TI"} 
