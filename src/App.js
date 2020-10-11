@@ -10,6 +10,7 @@ import {Switch,Route,Link} from "react-router-dom";
 import IP from "./ip"
 import { getDefaultNormalizer } from '@testing-library/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './home';
 
 const axios = require("axios");
 
@@ -62,7 +63,7 @@ function App() {
        <Route path="/cricket"><Cricket/></Route>
        <Route path="/food"><Food location={output.data}/></Route>
        <Route path="/news"><News/></Route>
-       <Route path="/"><Cricket/></Route> 
+       <Route path="/"><Home/></Route> 
        {/* change <Cricket/> to <Home/> when done  */}
        
        
