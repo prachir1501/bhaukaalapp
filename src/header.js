@@ -1,10 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import {Navbar,Nav} from 'react-bootstrap'
+
+
 function Header()
 {
     return (
-        <h1>Header</h1>
+        
+        <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="#home">BHAUKAAL</Navbar.Brand>
+    <Nav className="ml-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#features">Cricket</Nav.Link>
+      <Nav.Link href="#pricing">News</Nav.Link>
+      <Nav.Link href="#food">Food</Nav.Link>
+    </Nav>
+    
+  </Navbar>
+
+
     );
 }
 
