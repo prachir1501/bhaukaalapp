@@ -1,11 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Footer()
+import Footer from 'rc-footer';
+import 'rc-footer/assets/index.css';
+
+function Footer2()
 {
     return (
-        <h1>Footer</h1>
+
+        <Footer 
+
+        theme="dark"
+
+       
+
+        scolumnLayout='space-between'
+        
+
+       
+        
+        
+        
+        bottom="Made with ❤️, BHAUKAAL aane wala hai 🤯"
+        
+        
+      
+      
+        /> 
+        
+        
     );
 }
 
-export default Footer;
+export default Footer2;
