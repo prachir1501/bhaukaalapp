@@ -9,12 +9,12 @@ function Header()
     return (
         
         <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">BHAUKAAL</Navbar.Brand>
+    <Navbar.Brand href="/">BHAUKAAL</Navbar.Brand>
     <Nav className="ml-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Cricket</Nav.Link>
-      <Nav.Link href="#pricing">News</Nav.Link>
-      <Nav.Link href="#food">Food</Nav.Link>
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/cricket">Cricket</Nav.Link>
+      <Nav.Link href="/food">Food</Nav.Link>
+      <Nav.Link href="/news">News</Nav.Link>
     </Nav>
     
   </Navbar>

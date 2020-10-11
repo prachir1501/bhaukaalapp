@@ -5,8 +5,8 @@ import Cricket from './cricket';
 import News from './news'
 import Food from './food'
 import Movie from './movie'
-import Footer2 from './footer'
-import Header from './header'
+import {Switch,Route,Link} from "react-router-dom";
+
 import IP from "./ip"
 import { getDefaultNormalizer } from '@testing-library/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -56,24 +56,23 @@ function App() {
 
       <div className="App">
       
-      <Header/>
-
-    <Cricket/>
-
-   
+      
+     <Switch>
        
-        
-    {/* <h1>{console.log(output)}Manas Branch {output.data.country} </h1> */}
-        {/* <Cricket/> */}
-        {/* <News location={output.data.country}/> */}
-        <Food  location = {output.data}/>
-        {/* <Movie/>
-        <Footer/>
-        <Header/> */}
+       <Route path="/cricket"><Cricket/></Route>
+       <Route path="/food"><Food location={output.data}/></Route>
+       <Route path="/news"><News/></Route>
+       <Route path="/"><Cricket/></Route> 
+       {/* change <Cricket/> to <Home/> when done  */}
+       
+       
 
-        <Footer2/>
+     </Switch>
+    
+    </div>
+    
 
-      </div>
+      
     );
 
   }

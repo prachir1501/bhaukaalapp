@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router} from "react-router-dom";
+import Header from './header';
+import Footer2 from './footer';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+     <Header/>
+     <App/>
+     <Footer2/>
+  </Router>
+  ,
   document.getElementById('root')
 );
 
