@@ -9,13 +9,15 @@ import Footer2 from './footer'
 import Header from './header'
 import IP from "./ip"
 import { getDefaultNormalizer } from '@testing-library/react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const axios = require("axios");
 
 
 var res1;
 // let output;
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
@@ -74,7 +76,7 @@ function App() {
 
   }
   
-
+}
 
 
   
