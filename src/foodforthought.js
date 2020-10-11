@@ -11,7 +11,7 @@ function Foodforthought()
     useEffect(() => {
 
 
-        axios.get('http://api.quotable.io/random')
+        axios.get('https://cors-anywhere.herokuapp.com/http://api.quotable.io/random')
         .then((response) => {
             console.log(response.data.content);
 

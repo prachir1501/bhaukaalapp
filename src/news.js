@@ -6,7 +6,7 @@ import {Carousel} from "react-bootstrap";
 import "./newscard.css";
 const api ="640b658659984fbcbd3ad548f74df504";
 const axios = require("axios")
-const endpoint = "https://newsapi.org/v2/top-headlines?country=in"
+const endpoint = "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=in"
 
 
 function News(props)
