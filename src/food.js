@@ -14,8 +14,8 @@ const headers = {
 
 function Food(props)
 {
-   const lat = props.location.lat;
-   const lon = props.location.lon;
+   const lat = props.location.location.lat;
+   const lon = props.location.location.lng;
    const [rest,setRest] = useState([]);
    const [isLoaded, setIsLoaded] = useState(false);
 

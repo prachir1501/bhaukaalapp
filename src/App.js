@@ -30,6 +30,7 @@ function App() {
    
     axios.get("https://api.ipify.org").then(res => {  
     res1 = res.data ;
+    console.log(res1);
 
     IP(res1).then(function(response){
        
