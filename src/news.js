@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import Newscard from "./newscard";
+
+import {Carousel} from "react-bootstrap";
+import "./newscard.css";
 const api ="640b658659984fbcbd3ad548f74df504";
 const axios = require("axios")
 const endpoint = "https://newsapi.org/v2/top-headlines?country=in"
+
 
 function News(props)
 {
@@ -48,10 +53,68 @@ function News(props)
     else{
     return (
         <div>
-            <h1>Headlines {headlines[0].title}</h1>
-            <h1>Tech {tech[0].title}</h1>
-            <h1>sports {sports[0].title}</h1>
-           <h1>Health {health[0].title}</h1>
+
+           
+                <h1 style={{textAlign:"center",backgroundColor:"#343a40",color:"#ffffff"}}>Headlines</h1>
+                <div className="row" style={{backgroundColor:"#f9f9f9"}}>
+                {headlines.map(function(headline1,index){
+                    if(index<=5)
+                    {
+                    return (<div className="col-lg-4">
+                        <Newscard headline={headline1}/>
+                    </div>);
+                    }
+
+                })}
+
+                </div>
+                <h1 style={{textAlign:"center",backgroundColor:"#343a40",color:"#ffffff",padding:20}}>Health</h1>
+                <div className="row" style={{backgroundColor:"#f9f9f9"}}>
+                {health.map(function(headline1,index){
+                    if(index<=5)
+                    {
+                    return (<div className="col-lg-4">
+                        <Newscard headline={headline1}/>
+                    </div>);
+                    }
+
+                })}
+
+                </div>
+                <h1 style={{textAlign:"center",backgroundColor:"#343a40",color:"#ffffff",padding:20}}>Sports</h1>
+                <div className="row" style={{backgroundColor:"#f9f9f9"}}>
+                {sports.map(function(headline1,index){
+                    if(index<=5)
+                    {
+                    return (<div className="col-lg-4">
+                        <Newscard headline={headline1}/>
+                    </div>);
+                    }
+
+                })}
+
+                </div>
+                <h1 style={{textAlign:"center",backgroundColor:"#343a40",color:"#ffffff",padding:20}}>Tech Buzz</h1>
+                <div className="row" style={{backgroundColor:"#f9f9f9"}}>
+                {tech.map(function(headline1,index){
+                    if(index<=5)
+                    {
+                    return (<div className="col-lg-4">
+                        <Newscard headline={headline1}/>
+                    </div>);
+                    }
+
+                })}
+
+                </div>
+
+
+
+
+                
+                
+            
+           
 
         </div>
     
