@@ -9,7 +9,7 @@ export default function cardFood(props)
     return (
         <div>
             <Card className="card1">
-            <Card.Img className="ad" variant="top" src={r.featured_image} />
+            <Card.Img className="ad" variant="top" src={r.featured_image}  />
             <Card.Body>
             <Card.Title>{r.name}</Card.Title>
             <Card.Text>

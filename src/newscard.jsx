@@ -18,7 +18,7 @@ export default function newsCard(props){
     return (
         <div>
             <Card className="card1 news">
-            <Card.Img className="ad" variant="top" src={headline.urlToImage} />
+            <Card.Img className="ad2" variant="top" src={headline.urlToImage}  />
             <Card.Body>
             <Card.Title>{headline.title}</Card.Title>
             <Card.Text>
