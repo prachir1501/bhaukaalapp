@@ -15,6 +15,7 @@ function Header()
       <Nav.Link href="/cricket">Cricket</Nav.Link>
       <Nav.Link href="/food">Food</Nav.Link>
       <Nav.Link href="/news">News</Nav.Link>
+      <Nav.Link href="/foodforthought">Food For Thought</Nav.Link>
     </Nav>
     
   </Navbar>
