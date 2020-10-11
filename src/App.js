@@ -6,6 +6,7 @@ import News from './news'
 import Food from './food'
 import Movie from './movie'
 import {Switch,Route,Link} from "react-router-dom";
+import Foodforthought from "./foodforthought";
 
 import IP from "./ip"
 import { getDefaultNormalizer } from '@testing-library/react';
@@ -63,6 +64,7 @@ function App() {
        <Route path="/cricket"><Cricket/></Route>
        <Route path="/food"><Food location={output.data}/></Route>
        <Route path="/news"><News/></Route>
+       <Route path="/foodforthought"><Foodforthought/></Route>
        <Route path="/"><Home/></Route> 
        {/* change <Cricket/> to <Home/> when done  */}
        
