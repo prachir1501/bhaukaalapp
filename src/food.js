@@ -36,7 +36,7 @@ function Food(props)
     return (
         <div >
             <br/>
-            <h1>Restaurants Near You</h1>
+            <h1 style={{textAlign:"center"}}>Restaurants Near You</h1>
             <br/>
             
             <div className = "container">

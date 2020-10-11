@@ -9,13 +9,14 @@ import Footer2 from './footer'
 import Header from './header'
 import IP from "./ip"
 import { getDefaultNormalizer } from '@testing-library/react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const axios = require("axios");
 
 
 var res1;
 // let output;
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
 
     <Cricket/>
 
-    <Footer2/>
+   
        
         
     {/* <h1>{console.log(output)}Manas Branch {output.data.country} </h1> */}
@@ -69,13 +70,16 @@ function App() {
         {/* <Movie/>
         <Footer/>
         <Header/> */}
+
+        <Footer2/>
+
       </div>
     );
 
   }
   
 
-
+}
 
   
 
