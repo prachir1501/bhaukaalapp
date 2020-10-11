@@ -10,7 +10,10 @@ export default function newsCard(props){
     let headline = props.headline;
     let content = headline.description;
     console.log(content);
-    let str= content.slice(0, 20);
+    let str="";
+    if(content!=null) {str= content.slice(0, 20);}
+
+    
     
     return (
         <div>
